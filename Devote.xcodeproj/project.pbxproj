@@ -14,6 +14,10 @@
 		0CA36F942B1F7F270077269A /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA36F912B1F7F260077269A /* sound-ding.mp3 */; };
 		0CA36F952B1F7F270077269A /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA36F922B1F7F270077269A /* sound-rise.mp3 */; };
 		0CA36F962B1F7F270077269A /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA36F932B1F7F270077269A /* sound-tap.mp3 */; };
+		0CC4BAC92B20A676007FB743 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4BAC72B20A676007FB743 /* Devote.xcdatamodeld */; };
+		0CC4BAEE2B20AA11007FB743 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4BAED2B20AA11007FB743 /* Persistence.swift */; };
+		0CC4BAF02B20ABCD007FB743 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4BAEF2B20ABCD007FB743 /* Constant.swift */; };
+		0CC4BAF22B20B009007FB743 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4BAF12B20B009007FB743 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		0CA36F922B1F7F270077269A /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		0CA36F932B1F7F270077269A /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		0CA36F9D2B1F8A2B0077269A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0CC4BAC82B20A676007FB743 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		0CC4BAED2B20AA11007FB743 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0CC4BAEF2B20ABCD007FB743 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0CC4BAF12B20B009007FB743 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		0CA36F822B1F7A430077269A /* Devote */ = {
 			isa = PBXGroup;
 			children = (
+				0CA36F832B1F7A430077269A /* DevoteApp.swift */,
 				0CA36F9D2B1F8A2B0077269A /* Info.plist */,
 				0CA36F9C2B1F88E50077269A /* Model */,
 				0CA36F9B2B1F88C60077269A /* Utility */,
@@ -65,7 +74,6 @@
 				0CA36F992B1F88B00077269A /* Extension */,
 				0CA36F982B1F887B0077269A /* View */,
 				0CA36F972B1F7F2A0077269A /* Sound */,
-				0CA36F832B1F7A430077269A /* DevoteApp.swift */,
 				0CA36F872B1F7A450077269A /* Assets.xcassets */,
 				0CA36F892B1F7A450077269A /* Preview Content */,
 			);
@@ -101,6 +109,7 @@
 		0CA36F992B1F88B00077269A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0CC4BAF12B20B009007FB743 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -115,6 +124,7 @@
 		0CA36F9B2B1F88C60077269A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				0CC4BAEF2B20ABCD007FB743 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -122,6 +132,8 @@
 		0CA36F9C2B1F88E50077269A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0CC4BAC72B20A676007FB743 /* Devote.xcdatamodeld */,
+				0CC4BAED2B20AA11007FB743 /* Persistence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CA36F862B1F7A430077269A /* ContentView.swift in Sources */,
+				0CC4BAEE2B20AA11007FB743 /* Persistence.swift in Sources */,
+				0CC4BAF22B20B009007FB743 /* HideKeyboardExtension.swift in Sources */,
+				0CC4BAF02B20ABCD007FB743 /* Constant.swift in Sources */,
+				0CC4BAC92B20A676007FB743 /* Devote.xcdatamodeld in Sources */,
 				0CA36F842B1F7A430077269A /* DevoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +422,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0CC4BAC72B20A676007FB743 /* Devote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0CC4BAC82B20A676007FB743 /* Devote.xcdatamodel */,
+			);
+			currentVersion = 0CC4BAC82B20A676007FB743 /* Devote.xcdatamodel */;
+			path = Devote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0CA36F782B1F7A430077269A /* Project object */;
 }
